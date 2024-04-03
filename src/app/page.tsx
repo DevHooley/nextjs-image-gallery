@@ -10,7 +10,7 @@ export default function Home() {
             <h4>Welcome to Next.js Sample Project!</h4>
             <p>
               This project is designed to showcase and learn the new features of{' '}
-              <strong>Next.js</strong>.
+              <strong>NextJS app directory</strong> and its features, includind:
             </p>
             <ul>
               <li>Static and dynamic server-side rendering</li>
@@ -22,7 +22,8 @@ export default function Home() {
             </ul>
             <p className="mb-0">
               Every page uses a different approach to{' '}
-              <strong>fetching and caching data</strong>.
+              <strong>fetching and caching data.</strong> Click the links in the
+              nav bar to try them out!
             </p>
           </Alert>
         </Col>

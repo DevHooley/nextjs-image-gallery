@@ -30,14 +30,16 @@ export default async function Page() {
         Unsplash API always returns a new image, so we see a different image
         after refreshing the page.
       </Alert>
-      <Image
-        src={image.urls.raw}
-        alt={image.description || 'No description available'}
-        width={width}
-        height={height}
-        className="rounded shadow mw-100 h-100"
-        priority // Add the priority property
-      />
+      <div style={{ width: '100%', maxWidth: '500px' }}>
+        <Image
+          src={image.urls.raw}
+          alt={image.description || 'No description available'}
+          width={500}
+          height={Math.floor((500 / image.width) * image.height)}
+          className="rounded shadow"
+          priority
+        />
+      </div>
       by{' '}
       <Link href={'/users/' + image.user.username}>{image.user.username}</Link>
     </div>

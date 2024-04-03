@@ -51,7 +51,8 @@ export default async function Page({ params: { topic } }: PageProps) {
             alt={image.description || 'No description available'}
             key={image.urls.raw}
             className={styles.image}
-            priority // Add the priority property
+            // priority
+            priority={image.urls.raw === images[0].urls.raw} // Edited here
           />
         ))}
       </div>
